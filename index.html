@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DJ Albis Mix</title>
+
+<style>
+*{box-sizing:border-box}
+body{margin:0;font-family:Arial, sans-serif;color:white;scroll-behavior:smooth}
+
+.section{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+  background-size:cover;
+  background-position:center;
+  position:relative;
+}
+
+.overlay{
+  background:rgba(0,0,0,0.65);
+  padding:30px;
+  border-radius:20px;
+  animation:fade 1.5s ease;
+}
+
+@keyframes fade{
+  from{opacity:0;transform:translateY(20px)}
+  to{opacity:1;transform:translateY(0)}
+}
+
+h1{font-size:3em;margin:0}
+h2{margin-top:0}
+
+.btn{
+  display:inline-block;
+  margin:10px;
+  padding:12px 20px;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.whatsapp{background:#25D366;color:black}
+.instagram{background:#E1306C;color:white}
+.tiktok{background:#000;color:white}
+
+nav{
+  position:fixed;
+  top:0;
+  width:100%;
+  background:#000000aa;
+  text-align:center;
+  padding:10px;
+  z-index:1000;
+}
+
+nav a{
+  color:white;
+  margin:0 15px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+</style>
+</head>
+<body>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#servicios">Servicios</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<!-- INICIO -->
+<div id="inicio" class="section" style="background-image:url('fondo.jpg')">
+  <div class="overlay">
+    <h1>DJ Albis Mix 🎧</h1>
+    <p>Eventos que se convierten en fiesta 🔥</p>
+    <a class="btn whatsapp" href="https://wa.me/573004185117?text=Hola%20quiero%20contratarte" target="_blank">📲 Contratar</a>
+  </div>
+</div>
+
+<!-- SERVICIOS -->
+<div id="servicios" class="section" style="background-image:url('fondo2.jpg')">
+  <div class="overlay">
+    <h2>Servicios</h2>
+    <p>🎉 Cumpleaños</p>
+    <p>💍 Bodas</p>
+    <p>🏢 Eventos</p>
+    <p>🎶 DJ en vivo</p>
+  </div>
+</div>
+
+<!-- CONTACTO -->
+<div id="contacto" class="section" style="background-image:url('fondo3.jpg')">
+  <div class="overlay">
+    <h2>Contáctame</h2>
+    <a class="btn whatsapp" href="https://wa.me/573004185117?text=Hola%20quiero%20información" target="_blank">WhatsApp</a>
+    <a class="btn instagram" href="https://www.instagram.com/djalbismix" target="_blank">Instagram</a>
+    <a class="btn tiktok" href="https://tiktok.com/@dj.albis.mix" target="_blank">TikTok</a>
+  </div>
+</div>
+
+</body>
+</html>
